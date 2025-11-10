@@ -36,6 +36,8 @@ const login = async (req, res) => {
     email: user.email,
     token: generateToken(user._id),
   });
+
+  
 };
 
 module.exports = { register, login };
